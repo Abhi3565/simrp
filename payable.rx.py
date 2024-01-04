@@ -7,8 +7,7 @@ sheet.write(0, 0, "Report", bold)
 sheet.write(0, 1, "Payables Report")
 sheet.write(1, 0, "As on:", bold)
 sheet.write(1, 1, o.todate, df)
-#sheet.write(2, 0, "To:", bold)
-#sheet.write(2, 1, o.todate, df)
+
 
 parties = self.env['simrp.party'].search( [], order='name' )
 
@@ -45,11 +44,10 @@ for p in parties:
         acr = acr + d.amountcr
         ba = ba + d.baladjAmount
         
-    #pay = acr - adr
+   
     if ba < -1:
         sheet.write(r, 0, p.name)
         sheet.write(r, 1, p.creditperiod, nfi)
-        #sheet.write(r, 5, pay, nf)
         sheet.write(r, 5, ba, nf)
         
         crow = r
@@ -79,14 +77,7 @@ for p in parties:
         
         duet = duet + dueamt
         
-        #r = r + 1
-    """
-    sheet.write(r, 1, d.account_.name)
-    sheet.write(r, 2, d.duedate, df)
-    sheet.write(r, 3, d.newrefname)
-    sheet.write(r, 4, d.amountdr, nf)
-    sheet.write(r, 5, d.amountcr, nf)
-    """
+    
 
 sheet.write(3, 1, "<<Total>>", bold)
 sheet.write(3, 0, cnt, nfi)
