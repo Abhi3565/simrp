@@ -48,7 +48,6 @@ for p in parties:
     if ba < -1:
         sheet.write(r, 0, p.name)
         sheet.write(r, 1, p.creditperiod, nfi)
-        #sheet.write(r, 5, pay, nf)
         sheet.write(r, 5, ba, nf)
         
         crow = r
