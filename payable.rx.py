@@ -78,14 +78,7 @@ for p in parties:
         
         duet = duet + dueamt
         
-        #r = r + 1
-    """
-    sheet.write(r, 1, d.account_.name)
-    sheet.write(r, 2, d.duedate, df)
-    sheet.write(r, 3, d.newrefname)
-    sheet.write(r, 4, d.amountdr, nf)
-    sheet.write(r, 5, d.amountcr, nf)
-    """
+    
 
 sheet.write(3, 1, "<<Total>>", bold)
 sheet.write(3, 0, cnt, nfi)
