@@ -7,8 +7,7 @@ sheet.write(0, 0, "Report", bold)
 sheet.write(0, 1, "Payables Report")
 sheet.write(1, 0, "As on:", bold)
 sheet.write(1, 1, o.todate, df)
-#sheet.write(2, 0, "To:", bold)
-#sheet.write(2, 1, o.todate, df)
+
 
 parties = self.env['simrp.party'].search( [], order='name' )
 
