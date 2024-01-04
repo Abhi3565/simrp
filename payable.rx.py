@@ -44,7 +44,7 @@ for p in parties:
         acr = acr + d.amountcr
         ba = ba + d.baladjAmount
         
-    #pay = acr - adr
+   
     if ba < -1:
         sheet.write(r, 0, p.name)
         sheet.write(r, 1, p.creditperiod, nfi)
