@@ -31,7 +31,6 @@ class Uom(models.Model):
     name = fields.Char( 'UOM Name', size = 15, required = True )
     gstcode = fields.Char( 'GST UOM Code EWay', size = 15, required = True, default='' )
     gstr1code = fields.Char( 'GST UOM Code R1', size = 15, default='' )
-    #gstr1code1 = fields.Char( 'Dummy delete', size = 15, default='' )
 
 
 class Item(models.Model):
