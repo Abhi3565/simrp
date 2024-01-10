@@ -16,4 +16,5 @@ class Extresuser(models.Model):
             ], 'Group', default='s', readonly = True )
             
     #need to do a cmdline upgrade
-    
+    #hb accbsh  jbv  b 
+print('hello world')
